@@ -1,6 +1,12 @@
 # Merge-sort
-จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา โครงสร้างข้อมูลและอัลกอริทึม (Data Structures and Algorithms)
 
+## <a href="https://lacakp.github.io/merge-sort">https://lacakp.github.io/merge-sort</a>
+<br>
+<p>
+จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา โครงสร้างข้อมูลและอัลกอริทึม (Data Structures and Algorithms)
+</p>
+
+<br>
 
 # External Sort
 <p>
