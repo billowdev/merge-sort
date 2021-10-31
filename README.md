@@ -135,3 +135,7 @@ Wikipedia(2564).Two-way_merge. ค้นคืนแล้ว 29 กันยา
 
 Wikipedia(2021). Polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา https://en.wikipedia.org/wiki/Polyphase_merge_sort
 
+reference: 
+- Abdul Bari
+- https://www.youtube.com/watch?v=mB5HXBb_HY8
+- https://www.youtube.com/watch?v=6pV2IF0fgKY
