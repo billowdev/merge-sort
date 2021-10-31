@@ -39,18 +39,18 @@ Natural merge sort
 ### ภาพเพิ่มเติมสำหรับ Merge sort
 กระบวนการแยก
 <img src="image/divide.png" />
-- ref: https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_divide-v2-800x447.png
+- ref: [www.happycoders.eu](https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_divide-v2-800x447.png)
 
 กระบวนการ merge
  <img src="image/merge-process.png" />
 
-- ref: https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_merge-v2-800x416.png
+- ref: [www.happycoders.eu](https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_merge-v2-800x416.png)
 
 ภาพรวม
 
  <img src="image/overview-merge.png" />
 
-- ref: https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:Merge_sort_algorithm_diagram.svg
+- ref: [wikipedia](https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:Merge_sort_algorithm_diagram.svg)
 
 
 ### การ Merge ลิสต์ที่เรียงลำดับแล้วสองลิสต์ รวมกันเป็น ลิสต์เรียงลำดับ ลิสต์ดียว 
@@ -133,7 +133,7 @@ Wikipedia(2564). Merge sort. ค้นคืนแล้ว 27 กันยา�
 Wikipedia(2564).Two-way_merge. ค้นคืนแล้ว 29 กันยายน 2564 	
 แหล่งที่มา https://en.wikipedia.org/wiki/K-way_merge_algorithm#Two-way_merge
 
-Wikipedia(2021). Polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา https://en.wikipedia.org/wiki/Polyphase_merge_sort
+Wikipedia(2021). Polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา [](https://en.wikipedia.org/wiki/Polyphase_merge_sort)
 
 reference: 
 - Abdul Bari
