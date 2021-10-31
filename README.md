@@ -1,5 +1,5 @@
 # merge-sort
-โครงสร้างข้อมูลและอัลกอริทึม (Data Structures and Algorithms)
+จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา โครงสร้างข้อมูลและอัลกอริทึม (Data Structures and Algorithms)
 
 
 # External Sort
