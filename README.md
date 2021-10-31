@@ -1,4 +1,4 @@
-# merge-sort
+# Merge-sort
 จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา โครงสร้างข้อมูลและอัลกอริทึม (Data Structures and Algorithms)
 
 
@@ -51,8 +51,8 @@ Natural merge sort
 
  <img src="image/overview-merge.png" />
 
-- ref: [wikipedia](https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:Merge_sort_algorithm_diagram.svg)
-
+- ref: 
+<a href="https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C:Merge_sort_algorithm_diagram.svg">th.wikipedia.org</a>
 
 ### การ Merge ลิสต์ที่เรียงลำดับแล้วสองลิสต์ รวมกันเป็น ลิสต์เรียงลำดับ ลิสต์ดียว 
 (two sorted list merge to single sorted list)
@@ -89,14 +89,19 @@ Natural merge sort
 
 การผสาน 2 ทางแบบวนซ้ำ เป็นการผสานอาร์เรย์ k สองชุดซ้ำๆ โดยใช้การผสานแบบ 2 ทางจนเหลือเพียงอาร์เรย์เดียว หากอาร์เรย์ถูกรวมในลำดับที่ต้องการ เวลาทำงานที่ได้จะเป็น O(kn) เวลาทำงานสามารถปรับปรุงได้โดยการรวมครั้งแรกกับครั้งที่สอง ครั้งที่สามกับครั้งที่สี่ และอื่นๆ
 เนื่องจาก จำนวนอาร์เรย์ลดลงครึ่งหนึ่งในการวนซ้ำแต่ละครั้ง ทุกองค์ประกอบจะถูกย้ายเพียงครั้งเดียว เวลาทำงานต่อการวนซ้ำจึงอยู่ใน Θ(n) เนื่องจาก n คือจำนวนขององค์ประกอบ เวลาทำงานทั้งหมดจึงเป็น Θ(n log k)
- 
+
+<img src="image/tmw-merge.jpg" />
+
+<p>
 Polyphase merge
 	การเรียงลำดับแบบผสานเฟสเป็นรูปแบบของการเรียงลำดับการผสานจากล่างขึ้นบน ที่เรียงลำดับรายการโดยใช้การกระจาย รายการย่อย (runs) ที่ไม่สม่ำเสมอ
 ซึ่งส่วนใหญ่ใช้สำหรับการเรียงลำดับภายนอกและมีประสิทธิภาพมากกว่าการเรียงลำดับ ผสานทั่วไปเมื่อมีน้อยกว่า 8 ไฟล์การทำงานภายนอก (เช่น เทปไดร์ฟหรือไฟล์บนฮาร์ดไดร์ฟ) การเรียงลำดับการรวมหลายเฟสไม่ใช่การเรียงลำดับที่เสถียร 
 กล่าวคือ การเรียงลำดับแบบ polyphase merge จะลดจำนวนการรัน (runs) ทุกครั้งที่วนซ้ำของลูปหลักโดยการรวมรัน(runs) เป็นรัน(runs) ที่ใหญ่ขึ้น ซึ่งเป็นการรวมกันของสองเทคนิคคือ balanced two-way และ multi-way merging
+</p>
 
 ### Polyphase merge example
 
+<p>
 สมมุติว่าเรามี 3 เทป  (T1, T2, T3 ) และเราจะ merge ตามลำดับดังนี้ 
 จัดเรียงและแจกจ่ายบันทึกไปยัง T1 และ T2
 Merge T1 และ T2 ไปยัง T3 เหลือไว้บางตัวใน T2
@@ -104,39 +109,40 @@ Merge T2 และ T3 ไปยัง T1 เหลือไว้บางตั
 Merge T3 และ T1 ไปยัง T2 เหลือไว้บางตัวใน T3
 Merge T1 และ T2 ไปยัง T3 เหลือไว้บางตัวใน T2 และอื่นๆ
 เรามักทิ้งเทปต้นฉบับไว้สองอันและเทปหนึ่งอันสำหรับวางไฟล์ที่ผสาน
- 
+</p>
+
 <img src="image/polyphase.png" /> 
 
 
 ## อ้างอิง
+<a href="https://practice.geeksforgeeks.org/problems/explain-poly-way-merge-sort"> Aman Chauhan 1(2560) .  polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564</a>
 
- Aman Chauhan 1(2560) .  polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564 แหล่งที่มา https://practice.geeksforgeeks.org/problems/explain-poly-way-merge-sort
 
-CSC 344 – Algorithms and Complexity. Lecture #4 – External Sorting. ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา https://home.adelphi.edu/~siegfried/cs344/344l4.pdf
+<a href="https://home.adelphi.edu/~siegfried/cs344/344l4.pdf" >CSC 344 – Algorithms and Complexity. Lecture #4 – External Sorting. ค้นคืนแล้ว 29 กันยายน 2564.</a>
 
-GeeksforGeeks(2564). Merge Sort. ค้นคืนแล้ว 28 กันยายน 2564. แหล่งที่มา https://www.geeksforgeeks.org/merge-sort/
+<a href="https://www.geeksforgeeks.org/merge-sort/" >GeeksforGeeks(2564). Merge Sort. ค้นคืนแล้ว 28 กันยายน 2564.</a>
 
-GeeksforGeeks(2564). External Sorting. ค้นคืนแล้ว 27 กันยากัน 2564. แหล่งที่มา  https://www.geeksforgeeks.org/external-sorting/
+<a href="https://www.geeksforgeeks.org/external-sorting/" >GeeksforGeeks(2564). External Sorting. ค้นคืนแล้ว 27 กันยากัน 2564. </a>
 
-Minsoo Jeon and Dongseung Kim. Load-Balanced Parallel Merge Sort. 
-ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา https://www.researchgate.net/publication/220091378_Parallel_Merge_Sort_with_Load_Balancing#pf4
+<a href="https://www.researchgate.net/publication/220091378_Parallel_Merge_Sort_with_Load_Balancing#pf4" >Minsoo Jeon and Dongseung Kim. Load-Balanced Parallel Merge Sort. 
+ค้นคืนแล้ว 29 กันยายน 2564.</a>
 
-Son-klin Limthongkul(2557). External sorting. ค้นคืนแล้ว 28 กันยากัน 2564. แหล่งที่มา https://slideplayer.in.th/slide/2180294/
+<a href="https://slideplayer.in.th/slide/2180294/" >Son-klin Limthongkul(2557). External sorting. ค้นคืนแล้ว 28 กันยากัน 2564.</a>
 
-Sven Woltmann(2563). Merge Sort – Algorithm, Source Code, Time Complexity. 
-ค้นคืนแล้ว 28 กันยายน 2564. แหล่งที่มา
-https://www.happycoders.eu/algorithms/merge-sort/#Natural_Merge_Sort
+<a href="https://www.happycoders.eu/algorithms/merge-sort/#Natural_Merge_Sort" >Sven Woltmann(2563). Merge Sort – Algorithm, Source Code, Time Complexity. 
+ค้นคืนแล้ว 28 กันยายน 2564.</a>
 
-Ta(2012). [ชีทสรุป พี่ต้า] Data Structure & Algorithm. Merge Sort. ค้นคืนแล้ว 28 กันยายน 2564. แหล่งที่มา https://docs.google.com/file/d/0B09a_TYwhKDZZXNSRHV3aFhuamc/edit?resourcekey=0-JzOfoiKxvZreJUR5U0vPYg
+<a href="https://docs.google.com/file/d/0B09a_TYwhKDZZXNSRHV3aFhuamc/edit?resourcekey=0-JzOfoiKxvZreJUR5U0vPYg" >Ta(2012). [ชีทสรุป พี่ต้า] Data Structure & Algorithm. Merge Sort. ค้นคืนแล้ว 28 กันยายน 2564.</a>
 
-Wikipedia(2564). Merge sort. ค้นคืนแล้ว 27 กันยายน 2564. แหล่งที่มา https://en.wikipedia.org/wiki/Merge_sort
+<a href="https://en.wikipedia.org/wiki/Merge_sort" >Wikipedia(2564). Merge sort. ค้นคืนแล้ว 27 กันยายน 2564.</a>
+<a href="https://en.wikipedia.org/wiki/K-way_merge_algorithm#Two-way_merge" >Wikipedia(2564).Two-way_merge. ค้นคืนแล้ว 29 กันยายน 2564</a>
 
-Wikipedia(2564).Two-way_merge. ค้นคืนแล้ว 29 กันยายน 2564 	
-แหล่งที่มา https://en.wikipedia.org/wiki/K-way_merge_algorithm#Two-way_merge
 
-Wikipedia(2021). Polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564. แหล่งที่มา [](https://en.wikipedia.org/wiki/Polyphase_merge_sort)
+<a href="https://en.wikipedia.org/wiki/Polyphase_merge_sort" >Wikipedia(2021). Polyphase merge sort. ค้นคืนแล้ว 29 กันยายน 2564.</a>
 
-reference: 
-- Abdul Bari
-- https://www.youtube.com/watch?v=mB5HXBb_HY8
-- https://www.youtube.com/watch?v=6pV2IF0fgKY
+ 
+
+<a href="https://www.youtube.com/watch?v=mB5HXBb_HY8" > Youtube - Merge Sort Algorithm - Abdul Bari </a>
+
+<a href="https://www.youtube.com/watch?v=6pV2IF0fgKY" > Youtube - Two Way MergeSort - Iterative method - Abdul Bari </a>
+
