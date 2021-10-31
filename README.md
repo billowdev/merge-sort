@@ -39,7 +39,8 @@ Natural merge sort
 ### ภาพเพิ่มเติมสำหรับ Merge sort
 กระบวนการแยก
 <img src="image/divide.png" />
-- ref: [www.happycoders.eu](https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_divide-v2-800x447.png)
+- ref:
+<a href="https://www.happycoders.eu/wp-content/uploads/2020/07/mergesort_algorithm_divide-v2-800x447.png">www.happycoders.eu</a>
 
 กระบวนการ merge
  <img src="image/merge-process.png" />
